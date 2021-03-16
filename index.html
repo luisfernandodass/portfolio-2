@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-        <link rel="preconnect" href="https://fonts.gstatic.com">    
-<link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Caveat&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Caveat&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="/css/main.css">
 
@@ -18,33 +18,191 @@
 </head>
 
 <body>
-    <div class="container container-fluid">
 
-     <h5>Conte quantos dias você viveu até hoje :)</h5>
 
-        <div class="dates">
+    <div class="container">
 
-            <input type="text" id="inputDateStart" class="inputDateStart" placeholder="Sua data de nascimento">
+        <p>Calculadora</p>
 
-            <input type="text" id="inputDateEnd" class="inputDateEnd" placeholder="Data de hoje">
-
+        <div class="row ">
+            <div class="col-12 bg-warning">
+                <p id="result"></p>
+            </div>
         </div>
 
-        <button 
-        type="button" 
-        class="btn btn-success toCalculate"    
-        onclick="calcular()"
-        id="calulcarid"> 
-        Calcular 
-    </button>
+        <div class="row">
+            <div class="col-3 bg-success coluna" onclick="multiplication()">
+                <button 
+                class="btn"
+                id="multiplication" 
+                onclick="()"
+                >
+                *
+            </button>
+            </div>
+            <div class="col-3 coluna" onclick="division()">
+                <button 
+                class="btn"
+                id="division" 
+                onclick="()"
+                >
+                /
+            </button>
+            </div>
+            <div class="col-3 bg-dark coluna" onclick="subtraction()">
+                <button 
+                class="btn"
+                id="subtraction" 
+                onclick="()"
+                >
+                -
+            </button>
+            </div>
+            <div class="col-3 bg-danger coluna" onclick="addition()">
+                <button 
+                class="btn"
+                id="addition" 
+                onclick="()"
+                >
+                +
+            </button>
+            </div>
+        </div>
 
-        <input type="text" id="result">
-    </div>
+        <div class="row">
+            <div class="col-3 bg-success coluna">
+                <button 
+                class="btn"
+                id="dot" 
+                onclick="()"
+                >
+                .
+            </button>
+            </div>
+            <div class="col-3 coluna">
+                <button 
+                class="btn"
+                id="nine" 
+                onclick="()"
+                >
+                9
+            </button>
+            </div>
+            <div class="col-3 bg-dark coluna">
+                <button 
+                class="btn"
+                id="eight" 
+                onclick="()"
+                >
+                8
+            </button>
+            </div>
+            <div class="col-3 bg-danger coluna">
+                <button 
+                class="btn"
+                id="seven" 
+                onclick="()"
+                >
+                7
+            </button>
+            </div>
+        </div>
 
-    <footer class="fixed-bottom rodape">
-        <script src="js/countDate.js"></script>
-        <p>By Luis Fernando, 2021.</p>
-    </footer>
+        <div class="row">
+            <div class="col-3 bg-success coluna">
+                <button 
+                class="btn"
+                id="six" 
+                onclick="()"
+                >
+                6
+            </button>
+            </div>
+            <div class="col-3 coluna">
+                <button 
+                class="btn"
+                id="five" 
+                onclick="()"
+                >
+                5
+            </button>
+            </div>
+            <div class="col-3 bg-dark coluna">
+                <button 
+                class="btn"
+                id="four" 
+                onclick="()"
+                >
+                4
+            </button>
+            </div>
+            <div class="col-3 bg-danger coluna">
+                <button 
+                class="btn"
+                id="three" 
+                onclick="())"
+                >
+                3
+            </button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-3 bg-success coluna">
+                <button 
+                class="btn"
+                id="two" 
+                onclick="()"
+                >
+                2
+            </button>
+            </div>
+            <div class="col-3 coluna">
+                <button 
+                class="btn"
+                id="one" 
+                onclick="()"
+                >
+                1
+            </button>
+            </div>
+            <div class="col-3 bg-dark coluna">
+                <button 
+                class="btn"
+                id="zero" 
+                onclick="()"
+                >
+                0
+            </button>
+            </div>
+            <div class="col-3 bg-danger coluna" >
+                <button 
+                class="btn"
+                id="equal" 
+                onclick="calculate()"
+                >
+                =
+            </button>
+            </div>
+        </div>
+
+        <div class="row ">
+            <div class="col-3 bg-success coluna">
+                <button 
+                class="btn"
+                id="C" 
+                onclick="()"
+                >
+                C
+            </button>
+            </div>
+        </div>
+
+
+        <footer class="fixed-bottom rodape">
+            <script src="js/countDate.js"></script>
+            <p>By Luis Fernando, 2021.</p>
+        </footer>
 </body>
 
 </html>
