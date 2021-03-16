@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">    
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Caveat&display=swap" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="/css/main.css">
+
+    <title>Dias vividos</title>
+</head>
+
+<body>
+    <div class="container container-fluid">
+
+     <h5>Conte quantos dias você viveu até hoje :)</h5>
+
+        <div class="dates">
+
+            <input type="text" id="inputDateStart" class="inputDateStart" placeholder="Sua data de nascimento">
+
+            <input type="text" id="inputDateEnd" class="inputDateEnd" placeholder="Data de hoje">
+
+        </div>
+
+        <button 
+        type="button" 
+        class="btn btn-success toCalculate"    
+        onclick="calcular()"
+        id="calulcarid"> 
+        Calcular 
+    </button>
+
+        <input type="text" id="result">
+    </div>
+
+    <footer class="fixed-bottom rodape">
+        <script src="js/countDate.js"></script>
+        <p>By Luis Fernando, 2021.</p>
+    </footer>
+</body>
+
+</html>

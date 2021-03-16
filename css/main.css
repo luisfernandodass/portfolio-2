@@ -1,0 +1,45 @@
+html, body{
+margin: 0;
+padding: 0;
+
+background-color: rgb(180, 180, 144);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 130px;
+}
+h5{    
+    font-family: 'Amatic SC', cursive;  
+    font-size: 26px;
+    font-weight: bold;
+
+    margin-bottom: 10%;
+}
+.dates{
+    display: flex;
+    flex-direction: row;
+}
+.inputDateStart{
+    width: 50%;
+    margin-right: 1%;
+  
+    border: 0;
+}
+.inputDateEnd{
+    width: 50%;
+    margin-left: 1%;
+
+    border: 0;
+}
+
+.toCalculate{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.rodape{
+    text-align: center;
+
+    border-top: 1px solid rgb(61, 58, 58);
+}
