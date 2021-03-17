@@ -26,7 +26,7 @@
 
         <div class="row ">
             <div class="col-12 bg-warning">
-                <p id="result"></p>
+                <p id="visor"></p>
             </div>
         </div>
 
@@ -35,36 +35,37 @@
                 <button 
                 class="btn"
                 id="multiplication" 
-                onclick="()"
+                value="*"
+                onclick="('multiplicar')"
                 >
-                *
             </button>
             </div>
             <div class="col-3 coluna" onclick="division()">
                 <button 
                 class="btn"
                 id="division" 
-                onclick="()"
+                value="/"
+                onclick="('dividir')"
                 >
-                /
             </button>
             </div>
             <div class="col-3 bg-dark coluna" onclick="subtraction()">
                 <button 
                 class="btn"
                 id="subtraction" 
-                onclick="()"
+                value="-"
+                onclick="('subtrair')"
                 >
-                -
             </button>
             </div>
             <div class="col-3 bg-danger coluna" onclick="addition()">
                 <button 
                 class="btn"
                 id="addition" 
-                onclick="()"
+                value="+"
+                onclick="('somar')"
                 >
-                +
+                
             </button>
             </div>
         </div>
@@ -73,37 +74,37 @@
             <div class="col-3 bg-success coluna">
                 <button 
                 class="btn"
-                id="dot" 
-                onclick="()"
+                id="dot"
+                value="." 
+                onclick="('ponto')"
                 >
-                .
             </button>
             </div>
             <div class="col-3 coluna">
                 <button 
                 class="btn"
-                id="nine" 
-                onclick="()"
+                id="nine"
+                value="9" 
+                onclick="(9)"
                 >
-                9
             </button>
             </div>
             <div class="col-3 bg-dark coluna">
                 <button 
                 class="btn"
-                id="eight" 
-                onclick="()"
+                id="eight"
+                value="8" 
+                onclick="(8)"
                 >
-                8
             </button>
             </div>
             <div class="col-3 bg-danger coluna">
                 <button 
                 class="btn"
-                id="seven" 
-                onclick="()"
+                id="seven"
+                value="9" 
+                onclick="(7)"
                 >
-                7
             </button>
             </div>
         </div>
@@ -112,37 +113,37 @@
             <div class="col-3 bg-success coluna">
                 <button 
                 class="btn"
-                id="six" 
-                onclick="()"
+                id="six"
+                value="6" 
+                onclick="(6)"
                 >
-                6
             </button>
             </div>
             <div class="col-3 coluna">
                 <button 
                 class="btn"
-                id="five" 
-                onclick="()"
+                id="five"
+                value="5" 
+                onclick="(5)"
                 >
-                5
             </button>
             </div>
             <div class="col-3 bg-dark coluna">
                 <button 
                 class="btn"
-                id="four" 
-                onclick="()"
+                id="four"
+                value="4" 
+                onclick="(4)"
                 >
-                4
             </button>
             </div>
             <div class="col-3 bg-danger coluna">
                 <button 
                 class="btn"
-                id="three" 
-                onclick="())"
+                id="three"
+                value="3" 
+                onclick="(3)"
                 >
-                3
             </button>
             </div>
         </div>
@@ -151,37 +152,37 @@
             <div class="col-3 bg-success coluna">
                 <button 
                 class="btn"
-                id="two" 
-                onclick="()"
+                id="two"
+                value="2" 
+                onclick="(2)"
                 >
-                2
             </button>
             </div>
             <div class="col-3 coluna">
                 <button 
                 class="btn"
                 id="one" 
-                onclick="()"
+                value="1" 
+                onclick="(1)"
                 >
-                1
             </button>
             </div>
             <div class="col-3 bg-dark coluna">
                 <button 
                 class="btn"
                 id="zero" 
-                onclick="()"
+                value="0" 
+                onclick="(0)"
                 >
-                0
             </button>
             </div>
             <div class="col-3 bg-danger coluna" >
                 <button 
                 class="btn"
                 id="equal" 
-                onclick="calculate()"
+                value="=" 
+                onclick="calculate('resultado')"
                 >
-                =
             </button>
             </div>
         </div>
@@ -191,7 +192,8 @@
                 <button 
                 class="btn"
                 id="C" 
-                onclick="()"
+                value="C" 
+                onclick="('apagar')"
                 >
                 C
             </button>

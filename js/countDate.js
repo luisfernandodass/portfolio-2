@@ -8,7 +8,7 @@ function toCount(){
     var showTime = document.getElementById('result');
     showTime.textContent = time + ' dias';
 }
-*/
+
 
 function calculate(){
     var firstNumber = document.getElementById('seven').value;
@@ -22,21 +22,51 @@ function calculate(){
     showTime.textContent = time + ' dias';
 }
 
-function addition(){
-    var one = document.getElementById('one').value;
-    var two = document.getElementById('two').value;
-    var three = document.getElementById('three').value;
-    var four = document.getElementById('four').value;
-    var five = document.getElementById('five').value;
-    var six = document.getElementById('six').value;
-    var seven = document.getElementById('seven').value;
-    var eight = document.getElementById('eight').value;
-    var nine = document.getElementById('nine').value;
+function numbers(){
+    var one = document.getElementById('one').textContent;
+    var two = document.getElementById('two').textContent;
+    var three = document.getElementById('three').textContent;
+    var four = document.getElementById('four').textContent;
+    var five = document.getElementById('five').textContent;
+    var six = document.getElementById('six').textContent;
+    var seven = document.getElementById('seven').textContent;
+    var eight = document.getElementById('eight').textContent;
+    var nine = document.getElementById('nine').textContent;
     
 
-    var result = 5 + 10;
+    var result = one + two;
 
     var showTime = document.getElementById('result');
     showTime.textContent = result;
 }
+*/
+function vis(num) {
+    if (typeof gvisor == 'undefined') {
+        document.container.visor.value = '';
+    }
+    document.container.visor.value = document.container.visor.value + num;
+    gvisor = 1;
+}
 
+// Função que limpa  a calculadora
+function limpar() {
+    document.container.visor.value = '';
+}
+
+// Funçao que executa as operações
+function operacao(operador, valor1, valor2) {
+    if (operador == "somar") {
+        var valor = parseFloat(valor1) + parseFloat(valor2);
+    } else {
+        if (operador == "subtrair") {
+            var valor = valor1 - valor2;
+        } else {
+            if (operador == "multiplicar") {
+                var valor = valor1 * valor2;
+            } else {
+                var valor = valor1 / valor2;
+            }
+            return (valor);
+        }
+    }
+}
