@@ -1,26 +1,77 @@
-html, body{
+body{
 margin: 0;
 padding: 0;
-
-}
-@media (max-width:740px){
-   .container{
-       text-align: center;
-
-       margin-top: 50%;
-       width: 80%;
-   }
-   
-   .coluna{
-       border: 1px solid black;
-   }  
-
-   .visor{
-       background: rgb(246, 255, 252);
-
-       height: 40px;
-
-       border: 1px solid black;
-   }
+background: rgba(184, 223, 213, 0.699);
 }
 
+@media (max-width:420px){
+
+
+p{
+    font-family: 'Pangolin', cursive;
+}
+
+p:first-child{
+    font-size: 50px;
+    font-weight:100;
+    text-shadow: 2px 2px 1px rgba(2, 48, 45, 0.774);
+}
+
+.container{
+    margin-top: 20%;
+    text-align: center;
+}
+
+#calculadora{
+    
+    width: 100%;
+
+    background: rgba(252, 252, 252, 0.699);
+
+    border-radius: 15px;
+
+    box-shadow: 0px 1px 4px 4px rgba(165, 175, 175, 0.774);
+
+    padding-left: 2px;
+    padding-right: 12px;
+}
+
+.visor{
+    height: 80px;
+    text-align:right;
+}
+
+.number, .operator{
+    margin: 10px;
+
+    width: 40px;
+
+    height: 40px;
+
+    font-size: 20px;
+
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+#equalButton{
+    background: rgba(134, 204, 55, 0.911);
+}
+
+#additionButton{
+    background: rgba(250, 233, 0, 0.911);
+}
+
+#subtractionButton{
+    background: rgba(224, 100, 100, 0.911);
+}
+
+#multiplicationButton{
+    background: lightblue;
+}
+
+#divisionButton{
+    background:rgba(146, 146, 236, 0.911);
+}
+
+}

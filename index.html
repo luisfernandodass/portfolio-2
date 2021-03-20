@@ -9,9 +9,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Caveat&display=swap" rel="stylesheet">
-
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/main.css">
 
     <title>Dias vividos</title>
@@ -19,205 +18,123 @@
 
 <body>
 
-
     <div class="container">
 
         <p>Calculadora</p>
 
-        <div class="row ">
-            <div class="col-12 visor">
-                <p id="showResult">a</p>
+        <div id="calculadora">
+
+            <div class="visor">
+                <p id="showResult"></p>
+            </div>
+
+            <div class="row" id="keyboard">
+                
+                <div class="col-3">
+                    <button class="operator" id="erase" value="C" onclick="erase('erase')">
+                        C
+                    </button> 
+                                       
+                    <button class="number" id="seven" value="9" onclick="(7)">
+                        7
+                    </button>
+
+                    <button class="number" id="four" value="4" onclick="(4)">
+                        4
+                    </button>
+
+                    <button class="number" id="one" value="1" onclick="(1)">
+                        1
+                    </button>                   
+                </div>
+
+                <div class="col-3">
+                    <button class="number">
+ce
+                    </button>
+
+                    <button class="number" id="eight" value="8" onclick="(8)">
+                        8
+                    </button>
+
+                    <button class="number" id="five" value="5" onclick="(5)">
+                        5
+                    </button>
+
+                    <button class="number" id="two" value="2" onclick="(2)">
+                        2
+                    </button>
+
+                    <button class="number" id="zero" value="0" onclick="(0)">
+                        0
+                    </button>
+                </div>
+                    
+                    <div class="col-3">
+                        <button class="operator" id="" value="" onclick="">
+                            %
+                        </button>  
+                         
+                        <button class="number" id="nine" value="9" onclick="(9)">
+                            9
+                        </button>
+    
+                        <button class="number" id="six" value="6" onclick="(6)">
+                            6
+                        </button>    
+    
+                        <button class="number" id="three" value="3" onclick="(3)">
+                            3
+                        </button>                  
+                    </div>
+
+                    <div class="col-3">
+                        <button 
+                        class="operator" 
+                        id="equalButton" 
+                        value="=" 
+                        onclick="calculate('resultado')">
+                            =
+                        </button>
+
+                        <button 
+                        class="operator" 
+                        id="additionButton" 
+                        value="+" 
+                        onclick="addition('somar')">
+                            +
+                        </button>  
+
+                        <button 
+                        class="operator" 
+                        id="subtractionButton" 
+                        value="-" 
+                        onclick="subtraction('subtrair')">
+                            -
+                        </button>
+
+                        <button 
+                        class="operator" 
+                        id="multiplicationButton" 
+                        value="*" 
+                        onclick="multiplication('multiplicar')">
+                            *
+                        </button>
+        
+                        <button 
+                        class="operator" 
+                        id="divisionButton" 
+                        value="/" 
+                        onclick="division('dividir')">
+                            /
+                        </button>                   
+                    </div>               
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-3 bg-success coluna" onclick="multiplication()">
-                <button 
-                class="btn"
-                id="multiplication" 
-                value="*"
-                onclick="('multiplicar')"
-                >
-                *
-            </button>
-            </div>
-            <div class="col-3 coluna" onclick="division()">
-                <button 
-                class="btn"
-                id="division" 
-                value="/"
-                onclick="('dividir')"
-                >
-                /
-            </button>
-            </div>
-            <div class="col-3 bg-dark coluna" onclick="subtraction()">
-                <button 
-                class="btn"
-                id="subtraction" 
-                value="-"
-                onclick="('subtrair')"
-                >
-                -
-            </button>
-            </div>
-            <div class="col-3 bg-danger coluna" onclick="addition()">
-                <button 
-                class="btn"
-                id="addition" 
-                value="+"
-                onclick="('somar')"
-                >
-                +
-            </button>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-3 bg-success coluna">
-                <button 
-                class="btn"
-                id="dot"
-                value="." 
-                onclick="('ponto')"
-                >
-                .
-            </button>
-            </div>
-            <div class="col-3 coluna">
-                <button 
-                class="btn"
-                id="nine"
-                value="9" 
-                onclick="(9)"
-                >
-                9
-            </button>
-            </div>
-            <div class="col-3 bg-dark coluna">
-                <button 
-                class="btn"
-                id="eight"
-                value="8" 
-                onclick="(8)"
-                >
-                8
-            </button>
-            </div>
-            <div class="col-3 bg-danger coluna">
-                <button 
-                class="btn"
-                id="seven"
-                value="9" 
-                onclick="(7)"
-                >
-                7
-            </button>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-3 bg-success coluna">
-                <button 
-                class="btn"
-                id="six"
-                value="6" 
-                onclick="(6)"
-                >
-                6
-            </button>
-            </div>
-            <div class="col-3 coluna">
-                <button 
-                class="btn"
-                id="five"
-                value="5" 
-                onclick="(5)"
-                >
-                5
-            </button>
-            </div>
-            <div class="col-3 bg-dark coluna">
-                <button 
-                class="btn"
-                id="four"
-                value="4" 
-                onclick="(4)"
-                >
-                4
-            </button>
-            </div>
-            <div class="col-3 bg-danger coluna">
-                <button 
-                class="btn"
-                id="three"
-                value="3" 
-                onclick="(3)"
-                >
-                3
-            </button>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-3 bg-success coluna">
-                <button 
-                class="btn"
-                id="two"
-                value="2" 
-                onclick="(2)"
-                >
-                2
-            </button>
-            </div>
-            <div class="col-3 coluna">
-                <button 
-                class="btn"
-                id="one" 
-                value="1" 
-                onclick="(1)"
-                >
-                1
-            </button>
-            </div>
-            <div class="col-3 bg-dark coluna">
-                <button 
-                class="btn"
-                id="zero" 
-                value="0" 
-                onclick="(0)"
-                >
-                0
-            </button>
-            </div>
-            <div class="col-3 bg-danger coluna" >
-                <button 
-                class="btn"
-                id="resultado" 
-                value="=" 
-                onclick="calculate('resultado')"
-                >
-                =
-            </button>
-            </div>
-        </div>
-
-        <div class="row ">
-            <div class="col-3 bg-success coluna">
-                <button 
-                class="btn"
-                id="erase" 
-                value="C" 
-                onclick="erase('erase')"
-                >
-                C
-            </button>
-            </div>
-        </div>
-
-
-        <footer class="fixed-bottom rodape">
+        <footer class="rodape">
             <script src="js/countDate.js"></script>
+            <br>
             <p>By Luis Fernando, 2021.</p>
         </footer>
 </body>
