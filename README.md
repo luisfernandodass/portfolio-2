@@ -1,21 +1,10 @@
 <h1 align="center">Calculadora</h1>
 
-
-<p align="center">
- <a href="#tecnologias">Tecnologias</a> • 
- <a href="#features">Features</a> • 
- <a href="#imagens">Imagens</a> • 
- <a href="#licença">Licença</a> • 
- <a href="#autor">Autor</a>
-</p>
-
 <h4 align="center"> 
 	🚧  Calculadora em desenvolvimento...  🚧
 </h4>
  
  ### Tecnologias
-
-As seguintes ferramentas foram usadas na construção do projeto:
 
 - [JavaScript]
 - [HTML5]
@@ -23,10 +12,10 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 ### Features
 
-- [] Soma
-- [] Subtração
-- [] Multiplicação
-- [] Divisão
+- [x] Soma
+- [x] Subtração
+- [x] Multiplicação
+- [x] Divisão
 
 ### Imagens
 
