@@ -3,8 +3,12 @@
 <h4 align="center"> 
 	🚧  Calculadora em desenvolvimento...  🚧
 </h4>
- 
- ### Tecnologias
+
+### Imagens
+
+<img src="https://github.com/luisfernandodass/IMAGENS/blob/main/calculadora/calculadora.png">
+
+### Tecnologias
 
 - [JavaScript]
 - [HTML5]
@@ -16,11 +20,6 @@
 - [x] Subtração
 - [x] Multiplicação
 - [x] Divisão
-
-### Imagens
-
-<img src="https://github.com/luisfernandodass/IMAGENS/blob/main/calculadora/calculadora.png">
-
 
 ### Licença
 <img src="https://img.shields.io/github/license/luisfernandodass/doebrasil"/>
