@@ -30,7 +30,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 ### Imagens
 
-<img src="https://github.com/luisfernandodass/IMAGENS/blob/main/doebrasil-imagens/index-1.png"> <img src="https://github.com/luisfernandodass/IMAGENS/blob/main/doebrasil-imagens/doe-1.png"> <img src="https://github.com/luisfernandodass/IMAGENS/blob/main/doebrasil-imagens/comunidade.png"> <img src="https://github.com/luisfernandodass/IMAGENS/blob/main/doebrasil-imagens/perfil.png" ><img src="https://github.com/luisfernandodass/IMAGENS/blob/main/doebrasil-imagens/cadastro.png"> <img src="https://github.com/luisfernandodass/IMAGENS/blob/main/doebrasil-imagens/login.png"> <img src="https://github.com/luisfernandodass/IMAGENS/blob/main/doebrasil-imagens/quemSomos.png">
+<img src="https://github.com/luisfernandodass/IMAGENS/blob/main/calculadora/calculadora.png">
 
 
 ### Licença
