@@ -14,5 +14,13 @@ padding: 0;
    .coluna{
        border: 1px solid black;
    }  
+
+   .visor{
+       background: rgb(246, 255, 252);
+
+       height: 40px;
+
+       border: 1px solid black;
+   }
 }
 
