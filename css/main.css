@@ -4,17 +4,22 @@ padding: 0;
 background: rgba(184, 223, 213, 0.699);
 }
 
-@media (max-width:420px){
-
-
+@media (max-width:3000px){
 p{
     font-family: 'Pangolin', cursive;
 }
 
-p:first-child{
+.p:nth-child(1){
     font-size: 50px;
     font-weight:100;
     text-shadow: 2px 2px 1px rgba(2, 48, 45, 0.774);
+}
+
+.p:nth-child(2){
+    font-size: 40px;
+}
+#showResult-value{
+    margin-bottom: 1px;
 }
 
 .container{
@@ -22,8 +27,7 @@ p:first-child{
     text-align: center;
 }
 
-#calculadora{
-    
+#calculadora{  
     width: 100%;
 
     background: rgba(252, 252, 252, 0.699);
@@ -34,44 +38,66 @@ p:first-child{
 
     padding-left: 2px;
     padding-right: 12px;
+
+    
 }
 
-.visor{
-    height: 80px;
-    text-align:right;
+#showResult{
+    font-size: 50px;
+    font-weight:100;
+    text-align: right;
+    text-shadow: 2px 2px 1px rgba(2, 48, 45, 0.774);
+    justify-content:space-around;
+    height: 150px;
 }
 
-.number, .operator{
+.number, .operator, .empty{
     margin: 10px;
 
     width: 40px;
-
     height: 40px;
 
     font-size: 20px;
 
     border: 1px solid black;
     border-radius: 20px;
+    border-width: 0;
 }
 
-#equalButton{
+.number:hover, .empty:hover{
+    background: rgba(184, 223, 213, 0.699);
+
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+}
+.operator:hover{
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+.operator:nth-child(1){
     background: rgba(134, 204, 55, 0.911);
 }
 
-#additionButton{
-    background: rgba(250, 233, 0, 0.911);
+.operator:nth-child(2){
+    background: rgba(218, 230, 50, 0.911);
 }
 
-#subtractionButton{
-    background: rgba(224, 100, 100, 0.911);
+.operator:nth-child(3){
+    background: rgba(243, 79, 79, 0.911);
 }
 
-#multiplicationButton{
-    background: lightblue;
+.operator:nth-child(4){
+    background: rgba(133, 151, 231, 0.911);
 }
 
-#divisionButton{
-    background:rgba(146, 146, 236, 0.911);
+.operator:nth-child(5){
+    background: rgba(176, 111, 219, 0.911);
 }
 
+.operator:nth-child(6){
+    background: rgba(35, 127, 202, 0.911);
+}
 }

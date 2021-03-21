@@ -20,70 +20,72 @@
 
     <div class="container">
 
-        <p>Calculadora</p>
+        <p class="p">Calculadora</p>
 
         <div id="calculadora">
 
-            <div class="visor">
-                <p id="showResult"></p>
+            <div  id="showResult">
+                <p  id="showResult-value"></p>
+                <p class="p" id="output-value"></p>
             </div>
+            
 
             <div class="row" id="keyboard">
                 
                 <div class="col-3">
-                    <button class="operator" id="erase" value="C" onclick="erase('erase')">
+                    <button class="empty" id="erase" value="C" onclick="erase('erase')">
                         C
                     </button> 
                                        
-                    <button class="number" id="seven" value="9" onclick="(7)">
+                    <button class="number" id="7" value="9" onclick="(7)">
                         7
                     </button>
 
-                    <button class="number" id="four" value="4" onclick="(4)">
+                    <button class="number" id="4" value="4" onclick="(4)">
                         4
                     </button>
 
-                    <button class="number" id="one" value="1" onclick="(1)">
+                    <button class="number" id="1" value="1" onclick="(1)">
                         1
                     </button>                   
                 </div>
 
                 <div class="col-3">
                     <button class="number">
-ce
+                       CE
                     </button>
 
-                    <button class="number" id="eight" value="8" onclick="(8)">
+                    <button class="number" id="8" value="8" onclick="(8)">
                         8
                     </button>
 
-                    <button class="number" id="five" value="5" onclick="(5)">
+                    <button class="number" id="5" value="5" onclick="(5)">
                         5
                     </button>
 
-                    <button class="number" id="two" value="2" onclick="(2)">
+                    <button class="number" id="2" value="2" onclick="(2)">
                         2
                     </button>
 
-                    <button class="number" id="zero" value="0" onclick="(0)">
+                    <button class="number" id="0" value="0" onclick="(0)">
                         0
                     </button>
                 </div>
                     
                     <div class="col-3">
-                        <button class="operator" id="" value="" onclick="">
+                        <button class="operator bg-transparent" id="%" value="" onclick="">
                             %
                         </button>  
                          
-                        <button class="number" id="nine" value="9" onclick="(9)">
+                        <button class="number" id="9" value="9" onclick="(9)">
                             9
                         </button>
     
-                        <button class="number" id="six" value="6" onclick="(6)">
+                        <button class="number" id="6" value="6" onclick="(6)">
                             6
                         </button>    
     
-                        <button class="number" id="three" value="3" onclick="(3)">
+                        <button class="number" id="3" value="3" onclick="(3)">
                             3
                         </button>                  
                     </div>
@@ -91,7 +93,7 @@ ce
                     <div class="col-3">
                         <button 
                         class="operator" 
-                        id="equalButton" 
+                        id="=" 
                         value="=" 
                         onclick="calculate('resultado')">
                             =
@@ -99,7 +101,7 @@ ce
 
                         <button 
                         class="operator" 
-                        id="additionButton" 
+                        id="+" 
                         value="+" 
                         onclick="addition('somar')">
                             +
@@ -107,7 +109,7 @@ ce
 
                         <button 
                         class="operator" 
-                        id="subtractionButton" 
+                        id="-" 
                         value="-" 
                         onclick="subtraction('subtrair')">
                             -
@@ -115,7 +117,7 @@ ce
 
                         <button 
                         class="operator" 
-                        id="multiplicationButton" 
+                        id="*" 
                         value="*" 
                         onclick="multiplication('multiplicar')">
                             *
@@ -123,7 +125,7 @@ ce
         
                         <button 
                         class="operator" 
-                        id="divisionButton" 
+                        id="/" 
                         value="/" 
                         onclick="division('dividir')">
                             /
@@ -135,7 +137,7 @@ ce
         <footer class="rodape">
             <script src="js/countDate.js"></script>
             <br>
-            <p>By Luis Fernando, 2021.</p>
+            <p class="p">By Luis Fernando, 2021.</p>
         </footer>
 </body>
 
