@@ -4,7 +4,7 @@ padding: 0;
 background: rgba(184, 223, 213, 0.699);
 }
 
-@media (max-width:3000px){
+@media (max-width:360px){
 p{
     font-family: 'Pangolin', cursive;
 }
