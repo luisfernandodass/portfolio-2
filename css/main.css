@@ -1,6 +1,6 @@
 
 
-@media screen and (max-width:720px){
+
     body{
         margin: 0;
         padding: 0;
@@ -101,5 +101,4 @@ p{
 
 .operator:nth-child(6){
     background: rgba(35, 127, 202, 0.911);
-}
 }
