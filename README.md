@@ -1,7 +1,7 @@
 <h1 align="center">Calculadora</h1>
 
 <h4 align="center"> 
-	🚧  Calculadora em desenvolvimento...  🚧
+	  Calculadora finalizada! 
 </h4>
 
 ### Imagens
