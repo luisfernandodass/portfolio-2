@@ -1,196 +1,110 @@
-body{
+*, body{
     margin: 0;
     padding: 0;
-    background: rgba(184, 223, 213, 0.699);
-}       
-@media (max-width:720px){
-p{
-    font-family: 'Pangolin', cursive;
-}
-
-.p:nth-child(1){
-    font-size: 50px;
-    font-weight:100;
-    text-shadow: 2px 2px 1px rgba(2, 48, 45, 0.774);
-}
-
-.p:nth-child(2){
-    font-size: 40px;
-}
-#showResult-value{
-    margin-bottom: 1px;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .container{
-    text-align: center;
-}
-
-#calculadora{  
     width: 100%;
-
-    background: rgba(252, 252, 252, 0.699);
-
-    border-radius: 15px;
-
-    box-shadow: 0px 1px 4px 4px rgba(165, 175, 175, 0.774);
-
-    padding-left: 2px;
-    padding-right: 12px;    
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+.container-dark{
+    background-color: #282E40;
+    color: #fff;
+    width: 50%;
+    overflow:auto; 
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.logo{
+    font-size: 30px;
+    margin-left: 2%;
+    display: block;
+    position: absolute;
+    margin-top: 2%;
+}
+.title-language-one{
+    width: 100%;
+    display: block;
+    margin-left: 40%;
+    font-weight: 700;
+    position: fixed;
+    margin-top: 2%;
+}
+.text-language-one{
+    width: 35%;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    margin-left: 35%;
+    padding-top: 10%;
 }
 
-#showResult{
-    font-size: 50px;
-    font-weight:100;
-    text-align: right;
-    text-shadow: 2px 2px 1px rgba(2, 48, 45, 0.774);
-    justify-content:space-around;
-    height: 150px;
+.container-light{
+    background-color: rgb(255, 255, 255);
+    color: #282E40;
+    width: 50%;
+    overflow:auto; 
+    overflow-x: hidden;
+}
+.menuHamburger{
+    color: #282E40;
+    font-size: 30px;
+    margin-left: 45%;
+    display: block;
+    position: absolute;
+    margin-top: 2%;
+}
+.menuHamburger:hover{
+    cursor: pointer;
+}
+.menu{
+    position: absolute;
+    display: none;
+    background: #282E40;
+    width: 100%;
+    height: 59vh;
+    color: white;
+    text-align: center;
+    padding-top: 20%;
+}
+.menuX{
+    color: #fff;
+    font-size: 30px;
+    margin-left: 95%;
+    display: block;
+    position: absolute;
+    margin-top: -18%;
+}
+.menuX:hover{
+    cursor: pointer;
+}
+a{
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+}
+.title-language-two{
+    width: 100%;
+    display: block;
+    margin-left: 3%;
+    font-weight: 700;
+    position: fixed;
+    margin-top: 2%;
+}
+.text-language-two{
+    width: 35%;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    margin-left: 30%;
+    padding-top: 10%;
 }
 
-.number, .operator, .empty{
-    margin: 10px;
-
-    width: 40px;
-    height: 40px;
-
-    font-size: 20px;
-
-    border: 1px solid black;
-    border-radius: 20px;
-    border-width: 0;
-}
-
-.number:hover, .empty:hover{
-    background: rgba(184, 223, 213, 0.699);
-
-    -webkit-transform: scale(1.3);
-    -ms-transform: scale(1.3);
-    transform: scale(1.3);
-}
-.operator:hover{
-    -webkit-transform: scale(1.3);
-    -ms-transform: scale(1.3);
-    transform: scale(1.3);
-}
-
-.operator:nth-child(1){
-    background: rgba(134, 204, 55, 0.911);
-}
-
-.operator:nth-child(2){
-    background: rgba(218, 230, 50, 0.911);
-}
-
-.operator:nth-child(3){
-    background: rgba(243, 79, 79, 0.911);
-}
-
-.operator:nth-child(4){
-    background: rgba(133, 151, 231, 0.911);
-}
-
-.operator:nth-child(5){
-    background: rgba(176, 111, 219, 0.911);
-}
-
-.operator:nth-child(6){
-    background: rgba(35, 127, 202, 0.911);
-}
-}
-
-@media (min-width:721px){
-    p{
-        font-family: 'Pangolin', cursive;
-    }
-    
-    .p:nth-child(1){
-        font-size: 50px;
-        font-weight:100;
-        text-shadow: 2px 2px 1px rgba(2, 48, 45, 0.774);
-    }
-    
-    .p:nth-child(2){
-        font-size: 40px;
-    }
-    #showResult-value{
-        margin-bottom: 1px;
-    }
-    
-    .container{
-        width: 30%;
-        text-align: center;
-    }
-    
-    #calculadora{  
-        width: 100%;
-    
-        background: rgba(252, 252, 252, 0.699);
-    
-        border-radius: 15px;
-    
-        box-shadow: 0px 1px 4px 4px rgba(165, 175, 175, 0.774);
-    
-        padding-left: 2px;
-        padding-right: 12px;    
-    }
-    
-    #showResult{
-        font-size: 50px;
-        font-weight:100;
-        text-align: right;
-        text-shadow: 2px 2px 1px rgba(2, 48, 45, 0.774);
-        justify-content:space-around;
-        height: 150px;
-    }
-    
-    .number, .operator, .empty{
-        margin: 10px;
-    
-        width: 40px;
-        height: 40px;
-    
-        font-size: 20px;
-    
-        border: 1px solid black;
-        border-radius: 20px;
-        border-width: 0;
-    }
-    
-    .number:hover, .empty:hover{
-        background: rgba(184, 223, 213, 0.699);
-    
-        -webkit-transform: scale(1.3);
-        -ms-transform: scale(1.3);
-        transform: scale(1.3);
-    }
-    .operator:hover{
-        -webkit-transform: scale(1.3);
-        -ms-transform: scale(1.3);
-        transform: scale(1.3);
-    }
-    
-   
-    .operator:nth-child(1){
-        background: rgba(176, 111, 219, 0.911);
-    }
-    
-    .operator:nth-child(2){
-        background: rgba(218, 230, 50, 0.911);
-    }
-    
-    .operator:nth-child(3){
-        background: rgba(243, 79, 79, 0.911);
-    }
-    
-    .operator:nth-child(4){
-        background: rgba(133, 151, 231, 0.911);
-    }
-
-    .operator:nth-child(5){
-        background: rgba(134, 204, 55, 0.911);
-    }
-
-    .operator:nth-child(6){
-        background: rgba(35, 127, 202, 0.911);
-    }
+.icon-translate{
+    position:absolute;
+    margin-left: 45%;
+    margin-top: 20%;
 }

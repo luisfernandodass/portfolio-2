@@ -3,143 +3,129 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
-
-    <title>Calculadora</title>
+    <title>LeituraBilíngue</title>
 </head>
 
 <body>
-
     <div class="container">
+        <div class="container-dark">
+            <span>
+                <i class="fas fa-book-open logo"></i>
+            </span>
+            <span class="title-language-one">
+                 PORTUGUÊS
+            </span>
+            <div class="text-language-one">
+                JOSÉ <br><br>
 
-        <p class="p">Calculadora</p>
-
-        <div id="calculadora">
-
-            <div  id="showResult">
-                <p  id="showResult-value"></p>
-                <p class="p" id="output-value"></p>
-            </div>
+                E agora, José?<br>
+                A festa acabou,<br>
+                a luz apagou,<br>
+                o povo sumiu,<br>
+                a noite esfriou,<br>
+                e agora, José?<br>
+                e agora, você?<br>
+                você que é sem nome,<br>
+                que zomba dos outros,<br>
+                você que faz versos,<br>
+                que ama, protesta?<br>
+                e agora, José?<br>
+                (...)<br>
+                José, e agora?<br>
+                Se você gritasse,<br>
+                se você gemesse,<br>
+                se você tocasse<br>
+                a valsa vienense,<br>
+                se você dormisse,<br>
+                se você cansasse,<br>
+                se você morresse...<br>
+                Mas você não morre,<br>
+                você é duro, José!<br>
+                Sozinho no escuro<br>
+                qual bicho do mato,<br>
+                sem teogonia,<br>
+                sem parede nua<br>
+                para se encostar<br>
+                sem cavalo preto<br>
+                que fuja a galope,<br>
+                você marcha, José!<br>
+                José, para onde?<br>
             
-
-            <div class="row" id="keyboard">
-                
-                <div class="col-3">
-                    <button class="empty" id="erase" value="C" onclick="erase('erase')">
-                        C
-                    </button> 
-                                       
-                    <button class="number" id="7" value="9" onclick="(7)">
-                        7
-                    </button>
-
-                    <button class="number" id="4" value="4" onclick="(4)">
-                        4
-                    </button>
-
-                    <button class="number" id="1" value="1" onclick="(1)">
-                        1
-                    </button>                   
-                </div>
-
-                <div class="col-3">
-                    <button class="number">
-                       CE
-                    </button>
-
-                    <button class="number" id="8" value="8" onclick="(8)">
-                        8
-                    </button>
-
-                    <button class="number" id="5" value="5" onclick="(5)">
-                        5
-                    </button>
-
-                    <button class="number" id="2" value="2" onclick="(2)">
-                        2
-                    </button>
-
-                    <button class="number" id="0" value="0" onclick="(0)">
-                        0
-                    </button>
-                </div>
-                    
-                    <div class="col-3">
-                        <button class="operator bg-transparent" id="%" value="" onclick="">
-                            %
-                        </button>  
-                         
-                        <button class="number" id="9" value="9" onclick="(9)">
-                            9
-                        </button>
-    
-                        <button class="number" id="6" value="6" onclick="(6)">
-                            6
-                        </button>    
-    
-                        <button class="number" id="3" value="3" onclick="(3)">
-                            3
-                        </button>                  
-                    </div>
-
-                    <div class="col-3">
-                        <button 
-                        class="operator" 
-                        id="/" 
-                        value="/" 
-                        onclick="division('dividir')">
-                            /
-                        </button>         
-                        
-                       
-                        <button 
-                        class="operator" 
-                        id="+" 
-                        value="+" 
-                        onclick="addition('somar')">
-                            +
-                        </button>  
-
-                        <button 
-                        class="operator" 
-                        id="-" 
-                        value="-" 
-                        onclick="subtraction('subtrair')">
-                            -
-                        </button>
-
-                        <button 
-                        class="operator" 
-                        id="*" 
-                        value="*" 
-                        onclick="multiplication('multiplicar')">
-                            *
-                        </button>
-        
-                        <button 
-                        class="operator" 
-                        id="=" 
-                        value="=" 
-                        onclick="calculate('resultado')">
-                            =
-                        </button>
-
-                    </div>               
+                Carlos Drummond de Andrade
             </div>
         </div>
 
-        <footer class="rodape">
-            <script src="js/countDate.js"></script>
-            <br>
-            <p class="p">By Luis Fernando, 2021.</p>
-        </footer>
+        <span class="icon-translate" id="google_translate_element">
+
+        </span>
+
+        <div class="menu">
+            <i class="fas fa-times menuX"></i>
+            <a href="#">HOME</a> <br><br>
+            <a href="#">LIVROS</a> <br><br>
+            <a href="#">QUEM SOMOS</a> <br><br>
+
+            <p class="by">Desenvolvido por Luis Fernando, 2021.</p>
+        </div>
+
+        <div class="container-light">
+             <span class="title-language-two">
+                 INGLÊS
+             </span>
+
+            <span>
+                <i class="fas fa-bars menuHamburger"></i>
+                <!----i class="fas fa-times menuList"></i>---->
+            </span>
+
+             <div class="text-language-two">
+                JOSEPH<br><br>
+
+                And now Jose?<br>
+                The party is over,<br>
+                the light went out,<br>
+                the people disappeared,<br>
+                the night got cold,<br>
+                and now Jose?<br>
+                and now you?<br>
+                you who are nameless,<br>
+                who mocks others,<br>
+                you who make verses,<br>
+                who loves, protests?<br>
+                and now Jose?<br>
+                (...)<br>
+                Joseph, what now?<br>
+                If you screamed,<br>
+                if you moaned,<br>
+                if you played<br>
+                the Viennese waltz,<br>
+                if you slept,<br>
+                if you got tired,<br>
+                if you died...<br>
+                But you don't die,<br>
+                you are tough, Joseph!<br>
+                Alone in the dark<br>
+                which wild animal,<br>
+                without theogony,<br>
+                no bare wall<br>
+                to lean on<br>
+                no black horse<br>
+                to run away at a gallop,<br>
+                you march, Joseph!<br>
+                Joseph, where to?<br>
+                Carlos Drummond de Andrade
+            </div>
+        </div>
+    </div>
+    <script src="js/menu.js"></script>
+    <script src="js/translate.js"></script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 
 </html>
