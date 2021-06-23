@@ -6,7 +6,7 @@
 
 .container{
     width: 100%;
-    height: 100vh;
+   
     display: flex;
     flex-direction: row;
 }
@@ -14,47 +14,50 @@
     background-color: #282E40;
     color: #fff;
     width: 50%;
-    overflow:auto; 
-    overflow-x: hidden;
-    overflow-y: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
 }
 .logo{
     font-size: 30px;
-    margin-left: 2%;
-    display: block;
-    position: absolute;
+    margin-left: -10%;
+    position: fixed;
     margin-top: 2%;
 }
 .title-language-one{
     width: 100%;
-    display: block;
-    margin-left: 40%;
+    margin-left: 135%;
     font-weight: 700;
     position: fixed;
     margin-top: 2%;
 }
 .text-language-one{
-    width: 35%;
+    background: transparent;
+    color: white;
+    border: 0;
+    margin-top: 10%;
+    width: 50%;
     font-size: 18px;
     font-weight: 700;
     text-align: center;
-    margin-left: 35%;
-    padding-top: 10%;
+    word-break: break-word;
+    overflow-y: hidden;
+   
 }
-
 .container-light{
     background-color: rgb(255, 255, 255);
     color: #282E40;
     width: 50%;
-    overflow:auto; 
-    overflow-x: hidden;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
 }
 .menuHamburger{
     color: #282E40;
     font-size: 30px;
-    margin-left: 45%;
-    display: block;
-    position: absolute;
+    margin-left: 33%;
+   
+    position: fixed;
     margin-top: 2%;
 }
 .menuHamburger:hover{
@@ -73,9 +76,9 @@
 .menuX{
     color: #fff;
     font-size: 30px;
-    margin-left: 95%;
+    margin-left: 80%;
     display: block;
-    position: absolute;
+    position: fixed;
     margin-top: -18%;
 }
 .menuX:hover{
@@ -87,24 +90,47 @@ a{
     color: white;
 }
 .title-language-two{
-    width: 100%;
-    display: block;
-    margin-left: 3%;
+    color: #282E40;
+    position: fixed;  
     font-weight: 700;
-    position: fixed;
     margin-top: 2%;
+    margin-left: -43%;
 }
 .text-language-two{
-    width: 35%;
+    background: transparent;
+    color: #282E40;
+    border: 0;
+    margin-top: 10%;
+    width: 50%;
     font-size: 18px;
     font-weight: 700;
     text-align: center;
-    margin-left: 30%;
-    padding-top: 10%;
+    word-break: break-word;
+    overflow-y: hidden;
 }
 
-.icon-translate{
+.buttonTranslate{
+    background:transparent;
     position:absolute;
-    margin-left: 45%;
-    margin-top: 20%;
+    margin-left: 47.5%;
+    margin-top: 23%;
+    border: 0;
+    border-radius: 50%;
+    height: 10%;
 }
+.buttonTranslate:hover{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.fa-level-up-alt{
+    font-size: 50px;
+    color: #ffffff;
+    rotate: y 180deg;
+}
+
+.fa-level-down-alt{
+    font-size: 50px;
+    color: #282E40;
+}
+
