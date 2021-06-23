@@ -29,8 +29,7 @@ body{
     margin-top: 1.5%;
 }
 .title-language-one{
-    width: 100%;
-    margin-left: 135%;
+    margin-left: 39%;
     font-weight: 700;
     position: fixed;
     margin-top: 2%;
@@ -64,7 +63,6 @@ body{
     position: fixed;
     margin-top: 1%;
 }
-
 
 .menuHamburger:hover{
     cursor: pointer;
@@ -128,7 +126,6 @@ a{
 }
 
 #google_translate_element:hover{
- 
     background-color: rgba(0, 0, 0, 0.1);
 }
 
@@ -171,4 +168,50 @@ a{
 .fa-level-down-alt{
     font-size: 50px;
     color: #282E40;
+}
+
+@media screen and (max-width: 540px){
+    body{
+        font-size: 12px;
+    }
+
+    .container{
+        height: 500px;
+    }
+    .logo{
+        font-size: 30px;
+        margin-left: -8%;
+        position: fixed;
+        margin-top: 4%;
+    }
+    
+    .menuHamburger{
+        margin-top: 2%;
+        margin-left: 25%;
+        position: fixed;
+    }
+
+    .title-language-one{
+        margin-top: 5%;
+        margin-left: 25%;
+    }
+
+    .title-language-two{
+        margin-top: 5%;
+        margin-left: -32%;
+    }
+
+    .text-language-one{
+      
+    }
+
+    .text-language-two{
+        margin-top: 40%;
+    }
+
+    #google_translate_element{
+        margin-top: 80%;
+        margin-left: 40.5%;
+    }
+    
 }
