@@ -1,7 +1,11 @@
 *, body{
     margin: 0;
     padding: 0;
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;  
+}
+
+body{
+    top: 0!important;
 }
 
 .container{
@@ -22,7 +26,7 @@
     font-size: 30px;
     margin-left: -10%;
     position: fixed;
-    margin-top: 2%;
+    margin-top: 1.5%;
 }
 .title-language-one{
     width: 100%;
@@ -42,7 +46,7 @@
     text-align: center;
     word-break: break-word;
     overflow-y: hidden;
-   
+    resize: none;
 }
 .container-light{
     background-color: rgb(255, 255, 255);
@@ -56,12 +60,16 @@
     color: #282E40;
     font-size: 30px;
     margin-left: 33%;
-   
+    padding: 5px;
     position: fixed;
-    margin-top: 2%;
+    margin-top: 1%;
 }
+
+
 .menuHamburger:hover{
     cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.1);
+   border-radius: 5px;
 }
 .menu{
     position: absolute;
@@ -76,10 +84,10 @@
 .menuX{
     color: #fff;
     font-size: 30px;
-    margin-left: 80%;
-    display: block;
+    margin-left: 47.5%;
+    
     position: fixed;
-    margin-top: -18%;
+    margin-top: -18.5%;
 }
 .menuX:hover{
     cursor: pointer;
@@ -109,18 +117,49 @@ a{
     overflow-y: hidden;
 }
 
-.buttonTranslate{
+#google_translate_element{
     background:transparent;
     position:absolute;
-    margin-left: 47.5%;
-    margin-top: 23%;
+    margin-left: 39.2rem;
+    margin-top: 20%;
     border: 0;
-    border-radius: 50%;
-    height: 10%;
-}
-.buttonTranslate:hover{
+    border-radius: 5px;  
     cursor: pointer;
+}
+
+#google_translate_element:hover{
+ 
     background-color: rgba(0, 0, 0, 0.1);
+}
+
+.goog-te-banner-frame {
+    display: none;
+}
+
+.goog-te-gadget{
+    display: none;
+    background-color: transparent;
+}
+
+.goog-te-gadget-simple  {
+    background-color: transparent!important;
+    border: 0!important;
+    color: #282E40!important;
+    
+}
+
+.goog-te-gadget-icon{
+    display: none;
+}
+
+.goog-te-menu-value:nth-child(1){
+    text-transform: uppercase;
+    padding-left: 5%;
+  
+}
+
+.goog-te-menu-value span:nth-child(3){
+    border: 0px!important;
 }
 
 .fa-level-up-alt{
@@ -133,4 +172,3 @@ a{
     font-size: 50px;
     color: #282E40;
 }
-

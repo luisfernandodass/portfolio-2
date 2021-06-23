@@ -1,15 +1,16 @@
-var menuHamburger = document.querySelector('.menuHamburger');
-var menu = document.querySelector('.menu');
+const menuHamburger = document.querySelector('.menuHamburger');
+const menuX = document.querySelector('.menuX');
+let menu = document.querySelector('.menu');
 
 function menuToggle(){
-
- // 
- // remove menu
- menuHamburger.parentNode.removeChild(menuHamburger) 
+ menuHamburger.style.display = "none";
  menu.style.display = "block";
- // menuX.innerHTML = '<i class="fas fa-times menu"></i>';
- // put the hamburger menu
-  
 }
 
+function menuClose(){
+  menuHamburger.style.display = "block";
+  menu.style.display = "none"
+}
+
+menuX.addEventListener('click', menuClose);
 menuHamburger.addEventListener('click', menuToggle);
