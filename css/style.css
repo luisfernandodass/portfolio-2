@@ -21,43 +21,35 @@ body, h1, h2, h3, ul, li, p, dd, dt, dl {
   
   .menu{
     margin-left: 50%;
-    background: rgb(255, 255, 255);
+    padding: 1rem;
   }
   
   .menu ul{
     display: flex;
     flex-wrap: wrap;
-    padding: 10px;
   }
   
   .menu li a{
     display: block;
     padding: 10px;
-    margin-right: 10px;
-    color: rgb(0, 0, 0);
+    color: #fff;
     text-decoration: none;
     font-family: 'IBM Plex Sans', monospace;
     font-weight: bold;
     text-transform: uppercase;
     font-size: .875rem;
     letter-spacing: .2em;
+    margin-right: .5rem;
   }
   
   .menu li a:hover{
-    color: rgb(255, 255, 255);
-    background: rgb(0, 0, 0);
-  }
-  
-  
-  .animais{
-    width: 50%;
-    height: 92vh;
-    padding-bottom: 1rem;
-    background: rgb(255, 255, 255);
+    border:1px solid #fff;
   }
   
   .title {
     font-family: 'IBM Plex Sans', monospace;
+    font-weight: bold;
+    font-size: 2rem;
     text-transform: uppercase;
     color: #000;
     width: 100%;
@@ -65,86 +57,91 @@ body, h1, h2, h3, ul, li, p, dd, dt, dl {
     margin-top: 1rem;
   }
 
-  
-  .animais p{
-    font-family: Helvetica, Arial;
-    line-height: 1.2;
-    margin-bottom: 1rem;
-    
+  .projects{
+    width: 50%;
+    height: 92vh;
+    padding-bottom: 1rem;
+    background: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   
-  .animais-lista{
+  .projects-list{
     height: 510px;
     overflow-y: scroll;
     margin-left: 9rem;
     margin-bottom: 2rem;
     padding: 2rem 0 !important;
   }
-
- 
   
-  .animais-lista::-webkit-scrollbar{
+  .projects-list::-webkit-scrollbar{
     width: 18px;
   }
   
-  .animais-lista::-webkit-scrollbar-thumb{
+  .projects-list::-webkit-scrollbar-thumb{
     background:  #000;
     border-left: 4px solid #faf6ed;
     border-right: 4px solid #faf6ed;
   }
   
-  .animais-lista::-webkit-scrollbar-track{
+  .projects-list::-webkit-scrollbar-track{
     background: #faf6ed;
   }
   
-  .animais-descricao{
-    grid-column: 3;
+  .projects-description{
+    color: rgb(255, 255, 255);
+    width: 50%;
+    margin-left: 50%;
+    position: absolute;
+    font-family: 'IBM Plex Sans', monospace;
+    height: 510px;
+    margin-top: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .projects-description p{
+    padding: .5rem;
   }
   
-  .animais-descricao section{
-    margin-bottom: 8rem;
+  .projects-description section{
+    text-align: center;
     display: none;
   }
 
-  .animais-descricao section.ativo{
+  .projects-description section.ativo{
     margin-bottom: 8rem;
     display: block;
   }
   
-  .faq{
+  .whoIAm{
     background: rgb(255, 255, 255);
     height: 92vh;
-
+    color: #000;
     width: 50%;
     margin-left: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
-  .faq-lista{
+  .whoIAm-list{
     grid-column: 2 / 4;
   }
   
-  .faq-lista dt{
+  .whoIAm-list dt{
     font-family: 'IBM Plex Sans', monospace;
     font-weight: bold;
     margin-top: 2rem;
-    margin-bottom: .5rem;
-    color:  rgb(5, 20, 71);
-    display: flex;
-    align-items: center;
+    margin-bottom: 1rem;
+    color:  #222;
   }
   
-  .faq-lista dt::before{
-    content: '';
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    margin-right: .5rem;
-    background:  rgb(5, 20, 71);
-  }
-  
-  .faq-lista dd{
-    font-family: Helvetica, Arial;
+  .whoIAm-list dd{
+    font-family: 'IBM Plex Sans', monospace;
     margin-left: 1.3rem;
     margin-bottom: .5rem;
   }
@@ -153,16 +150,64 @@ body, h1, h2, h3, ul, li, p, dd, dt, dl {
     background: rgb(255, 255, 255);
     color: #000;
     height: 92vh;
-
     width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .skills div{
+    display: flex;
+    justify-content: center;
+    gap: 7rem;
+    margin-top: 2rem;
+    font-family: 'IBM Plex Sans', monospace;
   }
   
+  .skills ul li{
+    padding-bottom: 1rem;
+  }
+
   .courses{
     background: rgb(255, 255, 255);
     color: #000;
     height: 92vh;
     margin-left: 50%;
     width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  
+  .courses div{
+    display: flex;
+    justify-content: center;
+    gap: 7rem;
+    margin-top: 2rem;
+    font-family: 'IBM Plex Sans', monospace;
+  }
+  
+  .courses ul li{
+    padding-bottom: 1rem;
+  }
+
+  .contact div{
+    margin-top: 2rem;
+  }
+
+  .contact div a{
+    font-size: 5rem;
+    color: #000;
+    margin-right: 2rem;
+  }
+
+  .contact div a:hover{
+    color: #000;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 100%;
   }
 
   .contact{
@@ -170,11 +215,11 @@ body, h1, h2, h3, ul, li, p, dd, dt, dl {
     color: #000;
     height: 92vh;
     width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
-
-  
-  
-  
   
   .copy{
     width: 50%;
@@ -201,10 +246,10 @@ body, h1, h2, h3, ul, li, p, dd, dt, dl {
       grid-template-columns: 100px 1fr;
       grid-gap: 10px;
     }
-    .animais-lista{
+    .projects-list{
       grid-column: 1;
     }
-    .faq-lista, .dados, .mapa{
+    .whoIAm-list, .dados, .mapa{
       grid-column: 1 / 3;
     }
     .grid-section h1{
