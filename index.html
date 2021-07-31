@@ -1,67 +1,165 @@
-            <!DOCTYPE html>
-            <html lang="en">
-            
-            <head>
-                <meta charset="UTF-8">
-                <meta http-equiv="X-UA-Compatible" content="IE=edge">
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"/>
-                <link rel="preconnect" href="https://fonts.gstatic.com">
-                <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap" rel="stylesheet">
-                <link rel="stylesheet" href="css/main.css">
-                <title>LeiaNow</title>
-            </head>
-            
-            <body>
-                <div class="container">
-                    <div class="container-dark">
-                        <span>
-                            <i class="fas fa-book-open logo"></i>
-                        </span>
-                        <span class="title-language-one">
-                             PORTUGUÊS
-                        </span>
-            
-                        <textarea class="text-language-one">
-                        
-                        </textarea>
-                    </div>
-            
-                
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,400;1,400&family=Playfair+Display+SC&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="css/style.css">
+  <title>Portfolio | Luis Fernando</title>
+</head>
+<body>
+  <nav class="menu">
+    <ul>
+      <li><a href="#animais">Projetos</a></li>
+      <li><a href="#animais">Quem eu sou</a></li>
+      <li><a href="#animais">Habilidades</a></li>
+      <li><a href="#faq">Cursos</a></li>
+      <li><a href="#htttps://www.origamid.com">Contato →</a></li>
+    </ul>
+  </nav>
+  <section class="animais" id="animais">
+   <!--<h1 class="titulo">Luis Fernando</h1>-->
+   <h1 class="title">Projetos</h1>
+    <ul class="animais-lista js-tabmenu">
+      
+      <li>
+        <img src="img/booksave.png" alt="">
+      </li>
+      <li>
+        <img src="img/lifetime.png" alt="">
+      </li>
+        <li>
+          <img src="img/doebrasil.png" alt="">
+        </li>
+       
+        <li>
+        <img src="img/contato.png" alt="">
+      </li>    
+    </ul>
 
-                   <button type="button" id="google_translate_element" >
-                    <i class="fas fa-level-up-alt"></i>
-                    <i class="fas fa-level-down-alt"></i>
-                   </button>
-            
-                    <div class="menu">
-                        <i class="fas fa-times menuX"></i>
-                        <a href="/">HOME</a> <br><br>
-                        <a href="#">LIVROS</a> <br><br>
-                        <a href="#">QUEM SOMOS</a> <br><br>
-                        <br><br><br><br><br><br><br><br>
-                        <p class="by">Desenvolvido por Luis Fernando, 2021.</p>
-                    </div>
-            
-                    <div class="container-light">
-                         <span class="title-language-two">
-                             INGLÊS
-                         </span>
-            
-                        <span>
-                            <i class="fas fa-bars menuHamburger"></i>
-                            <!----i class="fas fa-times menuList"></i>---->
-                        </span>
-            
-                         <div class="text-language-two">
-                            
-                          
-                         </div>
-                    </div>
-                </div>
-                <script src="js/menu.js"></script>
-                <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-                <script src="js/translate.js"></script>
-            </body>
-            
-            </html>
+    <div class="animais-descricao js-tabcontent">
+      <section>
+        <h2>Book Save</h2>
+        <p>Controle quantos e quais livros já leu.</p>
+      </section>
+      <section>
+        <h2>LifeTime</h2>
+        <p>Conte quantos dias já viveu.</p>
+      </section>
+      <section>
+        <h2>Doe Brasil</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, eaque!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, eaque!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, eaque!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, eaque!</p>
+      </section>
+      <section>
+        <h2>iMecânica</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, eaque!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, eaque!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, eaque!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, eaque!</p>
+      </section>
+      <section>
+        <h2>Contato</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, eaque!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, eaque!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, eaque!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, eaque!</p>
+      </section>
+      <section>
+    </div>
+  </section>
+
+  <section class="faq" id="faq">
+    <h1 class="title">Quem eu sou</h1>
+    <!--Abaixo para criar uma lista com perguntas e respostas-->
+    <dl class="faq-lista"> <!--dl significa definition list-->
+      <dt> <!---dt significa definition term-->
+       Quem é o Luis?
+      </dt>
+      <dd> <!--dd significa definition description-->
+        Luis tem 18 anos, solteiro, mora em São Paulo.
+        Se apaixonou pelo desenvolvimento front-end e por criar coisas com a tecnologia.
+      </dd>
+
+      <dt> <!---dt significa definition term-->
+       Qual a sua escolaridade?
+      </dt>
+      <dd> <!--dd significa definition description-->
+Cursa o 4° semestre de Análise e Desenvolvimento de Sistemas      
+      <dt> <!---dt significa definition term-->
+        Quais os seus objetivos de carreira?
+      </dt>
+      <dd> <!--dd significa definition description-->
+Crescer e fazer com que os outros cresçam em conhecimento.
+Meu objetivo é gerenciar times, antes disso quero ser muito bom em desenvolvimento de software.
+      </dd>
+
+      <dt> <!---dt significa definition term-->
+        + Sobre Luis
+      </dt>
+      <dd> <!--dd significa definition description-->
+Fala inglês.
+Gosta de ler.
+      </dd>
+    </dl>
+  </section>
+
+  <section class="skills">
+    <h1 class="title">Habilidades</h1>
+    <ul>
+      <li>Inglês</li>
+      <li>JavaScript</li>
+      <li>CSS</li>
+      <li>HTML</li>
+      <li>SCSS</li>
+      <li>JSON</li>
+      <li>SQL</li>
+      <li>MySQL</li>
+      <li>Design Responsivo</li>
+      <li></li>
+      <li></li>
+    </ul>
+  </section>
+
+  <section class="courses">
+    <h1 class="title">Cursos</h1>
+    <ul>
+      <li>Inglês</li>
+      <li>JavaScript</li>
+      <li>CSS</li>
+      <li>HTML</li>
+      <li>SCSS</li>
+      <li>JSON</li>
+      <li>SQL</li>
+      <li>MySQL</li>
+      <li>Design Responsivo</li>
+      <li></li>
+      <li></li>
+    </ul>
+  </section>
+
+
+  <section class="contact" id="contato">
+    <h1 class="title">Contato</h1>
+    <ul class="dados">
+      <li>luisfernandodass@gmail.com</li>
+      <li>(11) 95122-8977</li>
+      <li>Rua Boa Vista</li>
+      <li>Rua três</li>
+    </ul>
+  </section>
+
+  <footer class="copy">
+    <p>Desenvolvido por Luis Fernando</p>
+  </footer>
+
+  <script src="js/script-module.js"></script>
+  <script src="js/tab-navigation.js"></script>
+
+</body>
+</html>
