@@ -1,34 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,400;1,400&family=Playfair+Display+SC&display=swap"
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,400;1,400&family=Playfair+Display+SC&family=Shadows+Into+Light&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <title>Portfólio | Luis Fernando</title>
 </head>
 
-<body>
-  <nav class="menu">
+<body class="body-black">
+  <i class="fas fa-toggle-off"></i>
+  <h1 class="my-name-white">Luis Fernando</h1>
+  <nav class="js-menu menu">
     <ul>
-      <li><a href="#projects">Projetos</a></li>
-      <li><a href="#whoIAm">Quem eu sou</a></li>
-      <li><a href="#skills">Habilidades</a></li>
-      <li><a href="#courses">Cursos</a></li>
-      <li><a href="#contact">Contato →</a></li>
+      <li><a href="#projects" class="link-black">Projetos</a></li>
+      <li><a href="#whoIAm" class="link-black">Quem eu sou</a></li>
+      <li><a href="#skills" class="link-black">Habilidades</a></li>
+      <li><a href="#courses" class="link-black">Cursos</a></li>
+      <li><a href="#contact" class="link-black">Contato →</a></li>
     </ul>
   </nav>
-  <section class="projects" id="projects">
-    <h1 class="title">Projetos</h1>
-    <ul class="projects-list js-tabmenu">
+  <section class="projects section-white" id="projects">
+    <h1 class="title-black">Projetos</h1>
 
+    <ul class="projects-list js-tabmenu">
+      <li>
+        <img src="img/portfolio.png" alt="">
+      </li>
       <li>
         <img src="img/booksave.png" alt="">
       </li>
@@ -37,15 +43,22 @@
       </li>
       <li>
         <img src="img/doebrasil.png" alt="">
+      <li>
+        <img src="img/imecanica.png" alt="">
       </li>
-
+      </li>
       <li>
         <img src="img/contato.png" alt="">
       </li>
     </ul>
   </section>
 
-  <div class="projects-description js-tabcontent">
+  <div class="projects-description-white js-tabcontent">
+    <section>
+      <h2>Portfólio 1</h2>
+      <p>Veja sobre mim, meus projetos, skills, cursos e links de contato.</p>
+      <p>Desenvolvido com JavaScript, HTML, CSS e Figma.</p>
+    </section>
     <section>
       <h2>Book Save</h2>
       <p>Controle quantos e quais livros já leu.</p>
@@ -76,65 +89,59 @@
     <section>
   </div>
 
-  <section class="whoIAm" id="whoIAm">
-    <h1 class="title">Quem eu sou</h1>
-    <!--Abaixo para criar uma lista com perguntas e respostas-->
-    <dl class="whoIAm-list">
-      <!--dl significa definition list-->
-      <dt>
-        <!---dt significa definition term-->
+  <section class="whoIAm section-white" id="whoIAm">
+    <h1 class="title-black">Quem eu sou</h1>
+
+    <dl class="whoIAm-list js-accordion">
+      <dt class="ativo">
         Quem é o Luis?
       </dt>
       <dd>
-        <!--dd significa definition description-->
-        Luis tem 18 anos, solteiro, mora em São Paulo.
-        Se apaixonou pelo desenvolvimento front-end e por criar coisas com a tecnologia.
+        Tenho 18 anos, solteiro, moro em São Paulo.
+        Me apaixonei pelo desenvolvimento front-end e por criar coisas com a tecnologia.
       </dd>
 
       <dt>
-        <!---dt significa definition term-->
         Qual a sua escolaridade?
       </dt>
       <dd>
-        <!--dd significa definition description-->
-        Cursa o 4° semestre de Análise e Desenvolvimento de Sistemas
+        Curso o 4° semestre de Análise e Desenvolvimento de Sistemas
       <dt>
-        <!---dt significa definition term-->
         Quais os seus objetivos de carreira?
       </dt>
       <dd>
-        <!--dd significa definition description-->
-        Crescer e fazer com que os outros cresçam em conhecimento.
-        Meu objetivo é gerenciar times, antes disso quero ser muito bom em desenvolvimento de software.
+        Meu principal objetivo é fazer acontencer, fazer com que as pessoas, produtos e eu mesmo melhore dia após
+        dia.<br>
+        Meu objetivo de médio prazo é me tornar um desenvolvedor full-stack. <br>
+        Meu objetivo de longo prazo é gerenciar times.
       </dd>
 
       <dt>
-        <!---dt significa definition term-->
         + Sobre Luis
       </dt>
       <dd>
-        <!--dd significa definition description-->
-        Fala inglês.
-        Gosta de ler.
+        Falo inglês.
+        Gosto de ler. <br>
+        Tenho o forte desejo de empreender.
       </dd>
     </dl>
   </section>
 
-  <section class="skills" id="skills">
-    <h1 class="title">Habilidades</h1>
+  <section class="skills section-white" id="skills">
+    <h1 class="title-black">Habilidades</h1>
     <div>
       <ul>
-           <li>Inglês - Intermediário a avançado</li>
-           <li>JavaScript - Básico a intermediário</li>
-           <li>HTML - Intermediário</li>
-           <li>CSS - Intermediário</li>
-           <li>Sass - Intermediário</li>
-           <li>Git - Intermediário</li>
-           <li>Linux - Intermediário</li>
-           <li>Bootstrap - Avançado</li>
-    </ul>
+        <li>Inglês - Intermediário a avançado</li>
+        <li>JavaScript - Básico a intermediário</li>
+        <li>HTML - Intermediário</li>
+        <li>CSS - Intermediário</li>
+        <li>Sass - Intermediário</li>
+        <li>Git - Intermediário</li>
+        <li>Linux - Intermediário</li>
+        <li>Bootstrap - Avançado</li>
+      </ul>
 
-    <ul>
+      <ul>
         <li>Design Responsivo - Intermediário</li>
         <li>UI - Intermediário</li>
         <li>Figma - Intermediário</li>
@@ -142,59 +149,58 @@
         <li>MySQL - Básico</li>
         <li>Json - Intermediário</li>
         <li>Firebase - Básico</li>
-    </ul>
+      </ul>
+    </div>
+  </section>
+
+  <section class="courses section-white" id="courses">
+    <h1 class="title-black">Cursos</h1>
+    <div>
+      <ul>
+        <li> Inglês - Number One</li>
+        <li>JavaScript - Curso em Vídeo</li>
+        <li> HTML5 - Curso em Vídeo</li>
+        <li> MySQL - Curso em Vídeo</li>
+        <li>Git e GitHub - Curso em Vídeo</li>
+        <li>Rede de Computadores - Curso em Vídeo</li>
+        <li> Bootstrap 4 - Udemy</li>
+      </ul>
+
+      <ul>
+        <li>Sass - Udemy</li>
+        <li>Gestão Ágil com Scrum - Udemy</li>
+        <li>User Experience - FIAP</li>
+        <li>DevOps & Agile Culture - FIAP</li>
+        <li>Interactivity with JavaScript - Coursera</li>
+        <li>CSS Flexbox - Origamid</li>
+      </ul>
+  </section>
   </div>
+
+  <section class="contact section-white" id="contact">
+    <h1 class="title-black">Entre em contato</h1>
+    <div>
+      <a href="https:/www.linkedin.com/in/luisfernandodass/" target="_blank">
+        <i class="link-social-media-black fab fa-linkedin-in"></i>
+      </a>
+      <a href="https://api.whatsapp.com/send?phone=5511951228977&text=Ol%C3%A1%20Luis!" target="_blank">
+        <i class="link-social-media-black fab fa-whatsapp" target="_blank"></i>
+      </a>
+      <a href="https://www.instagram.com/luisfernandodass/" target="_blank">
+        <i class="link-social-media-black fab fa-instagram"></i>
+      </a>
+      <a href="https://github.com/luisfernandodass" target="_blank">
+        <i class="link-social-media-black fab fa-github"></i>
+      </a>
+    </div>
   </section>
 
-  <section class="courses" id="courses">
-    <h1 class="title">Cursos</h1>
-   <div>
-    <ul>
-      <li> Inglês - Number One</li>
-      <li>JavaScript - Curso em Vídeo</li>
-      <li> HTML5 - Curso em Vídeo</li>
-      <li> MySQL - Curso em Vídeo</li>
-      <li>Git e GitHub - Curso em Vídeo</li>
-      <li>Rede de Computadores - Curso em Vídeo</li>
-      <li> Bootstrap 4 - Udemy</li>
-   </ul>
-
-   <ul>
-    <li>Sass - Udemy</li>
-    <li>Gestão Ágil com Scrum - Udemy</li>
-    <li>User Experience - FIAP</li>
-    <li>DevOps & Agile Culture - FIAP</li>
-    <li>Interactivity with JavaScript - Coursera</li>
-    <li>CSS Flexbox - Origamid</li>
- </ul>
-  </section>
-   </div>
-
-  <section class="contact" id="contact">
-    <h1 class="title">Entre em contato</h1>
-   <div>
-    <a href="https:/www.linkedin.com/in/luisfernandodass/" target="_blank">
-      <i class="fab fa-linkedin-in"></i>
-  </a>
-  <a href="https://api.whatsapp.com/send?phone=5511951228977&text=Ol%C3%A1%20Luis!" target="_blank">
-      <i class="fab fa-whatsapp" target="_blank"></i>
-  </a>
-  <a href="https://www.instagram.com/luisfernandodass/" target="_blank">
-      <i class="fab fa-instagram"></i>
-  </a>
-  <a href="https://github.com/luisfernandodass" target="_blank">
-      <i class="fab fa-github"></i>
-  </a>
-   </div>
-  </section>
-
-  <footer class="copy">
+  <footer class="by-white">
     <p>Desenvolvido por Luis Fernando, 2021.</p>
   </footer>
 
-  <script src="js/script-module.js"></script>
-  <script src="js/tab-navigation.js"></script>
-
+  <script type="module" src="js/script.js"></script>
+  <script src="/js/whoIam.js"></script>
 </body>
 
 </html>
