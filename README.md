@@ -6,7 +6,7 @@ To expose my projects.
 
 ## Host
 
-Access the website: https://portifolio02.netlify.app/
+Access the website: https://luisfernando-portfolio2.netlify.app
  
 ## Tools
 
