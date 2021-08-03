@@ -15,12 +15,10 @@ The following tools were used to build the project:
 - JavaScript
 - CSS3
 - HTML
-- Bootstrap
-- Figma
 
 ## Images
 
-![image](https://user-images.githubusercontent.com/67171626/126706508-ebab9c53-2542-469f-bff9-aa415bbc087e.png)
+![image](https://user-images.githubusercontent.com/67171626/127990992-2011377f-72da-4239-96fe-6c8509df54f7.png)
 
 ## License
 <img src="https://img.shields.io/github/license/luisfernandodass/doebrasil"/>
