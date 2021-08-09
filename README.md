@@ -2,7 +2,7 @@
 
 ## Objective
 
-To expose my projects.
+To expose my projects. (Desktop only)
 
 ## Host
 
